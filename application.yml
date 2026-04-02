@@ -1,1 +1,8 @@
-message: welcome to secureinsurance
+logging:
+  level:
+    root: INFO
+    org.hibernate: ERROR
+
+spring:
+  jpa:
+    show-sql: true
