@@ -1,0 +1,28 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: proposal-services
+  main:
+    banner-mode: off
+
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/ORCLPDB
+    username: proposal
+    password: ins123
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: INFO
+    org.hibernate: ERROR
+    org.springframework.web: INFO
+    org.springframework.data: ERROR
+    com.zaxxer.hikari: ERROR
