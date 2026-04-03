@@ -25,6 +25,16 @@ management:
     web:
       exposure: 
         include: "*"
+        
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: customer-service
+    description: Customer microservice for insurance system
+    version: 1.0
 
 logging:
   level:
