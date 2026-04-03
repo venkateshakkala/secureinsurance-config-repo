@@ -4,6 +4,14 @@ server:
 spring:
   application:
     name: customer-services
+
+management:
+  endpoints:
+    web:
+      exposure: 
+        include: "*"
+  
+
   main:
     banner-mode: off
 
