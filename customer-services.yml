@@ -4,14 +4,7 @@ server:
 spring:
   application:
     name: customer-services
-
-management:
-  endpoints:
-    web:
-      exposure: 
-        include: "*"
   
-
   main:
     banner-mode: off
 
@@ -26,6 +19,12 @@ management:
     hibernate:
       ddl-auto: update
     show-sql: true
+    
+management:
+  endpoints:
+    web:
+      exposure: 
+        include: "*"
 
 logging:
   level:
