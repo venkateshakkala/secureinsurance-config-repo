@@ -19,6 +19,22 @@ spring:
       ddl-auto: update
     show-sql: true
 
+management:
+  endpoints:
+    web:
+      exposure: 
+        include: "*"
+        
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: proposal-service
+    description: Prposal microservice for insurance system
+    version: 1.0
+
 logging:
   level:
     root: INFO
